@@ -8,12 +8,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(four, seven) { //eslint-disable-line
+function sum(num1, num2) { //eslint-disable-line
 
-  var total = four + seven;
-  var message = 'The sum of ' + four + ' and ' + seven + ' is ' + total + '.';
+  var total = num1 + num2;
+  var message = 'The sum of ' + num1 + ' and ' + num2 + ' is ' + total + '.';
 
-  return [total, message];
+  return [total,message];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -32,8 +32,6 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(five, nine) { //eslint-disable-line
-  console.log(five);
-  console.log(nine);
   var product = five * nine;
   var message = 'The product of ' + five + ' and ' + nine + ' is ' + product + '.';
   return[product,message];
@@ -41,7 +39,7 @@ function multiply(five, nine) { //eslint-disable-line
 
 // Here is the test for multiply(); uncomment it to run it
 // eslint-disable-next-line no-undef
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -58,11 +56,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var total1 = sum(a,b);
+  var total2 = sum(total1[0],c);
+  console.log(total2[0]);
+  var product1 = multiply(a,b);
+  var product2 = multiply(product1[0],c);
+  console.log(product2[0]);
+  var message1 = a + ' and ' +b+ ' and ' +c+ ' sum to ' +total2[0]+'.';
+  var message2 = 'The product of '+a+ ' and ' +b+' and ' +c+ ' is ' +product2[0]+'.';
+  return[total2[0],product2[0],message1,message2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+// eslint-disable-next-line no-undef
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
