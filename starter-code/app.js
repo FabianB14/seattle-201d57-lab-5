@@ -119,18 +119,6 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  console.log(multArr);
-  if(multArr.length){
-    for(var i = 0; i < multArr.length; i+=2){
-      var product1 = multiply(multArr[i],multArr[i]+1);
-      if(multArr[i+2] !==undefined){
-        var product2 = multiply(multArr[i+2],product1[0]);
-      }
-    }
-    var message = 'The numbers 2,3,4 have a product of '+product2[0]+'.';
-    return[product2[0],message];
-  }
-  return[0];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -159,10 +147,7 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-  var dyanmicProduct = multiplyArray(dynamicArray);
-  console.log(dynamicArray[0]);
-  var message = 'The numbers 1,2,3,4,5 have a product of 120.';
-  return[120,'The numbers 1,2,3,4,5 have a product of 120.'];
+
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
