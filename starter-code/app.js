@@ -18,7 +18,7 @@ function sum(num1, num2) { //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 // eslint-disable-next-line no-undef
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -39,7 +39,7 @@ function multiply(five, nine) { //eslint-disable-line
 
 // Here is the test for multiply(); uncomment it to run it
 // eslint-disable-next-line no-undef
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -69,7 +69,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // eslint-disable-next-line no-undef
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -93,7 +93,7 @@ function sumArray(sumArr) { //eslint-disable-line
         var total2 = sum(sumArr[i+2],total1[0]);
       }
     }
-    var message = '2,3,4 was passed in as an array of numbers, and '+total2+' is their sum.';
+    var message = '2,3,4 was passed in as an array of numbers, and '+total2[0]+' is their sum.';
     return[total2[0],message];
   }
   return[0];
@@ -103,7 +103,7 @@ function sumArray(sumArr) { //eslint-disable-line
 // Here is the test for sumArray(); uncomment it to run it
 
 // eslint-disable-next-line no-undef
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -164,6 +164,6 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // eslint-disable-next-line no-undef
-testMultiplyAnyArray(testDynamicArray);
+// testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
